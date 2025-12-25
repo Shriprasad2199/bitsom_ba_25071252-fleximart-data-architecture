@@ -1,0 +1,32 @@
+FlexiMart ETL Data Quality Report
+Generated on: 2025-12-25 00:28:45
+
+== customers_raw.csv ==
+Rows read: 26
+Duplicates removed: 1
+Missing values filled: 0
+Rows dropped: 5
+Rows loaded: 20
+Notes:
+- Dropped 5 customer rows due to missing email (NOT NULL constraint).
+
+== products_raw.csv ==
+Rows read: 20
+Duplicates removed: 0
+Missing values filled: 4
+Rows dropped: 0
+Rows loaded: 20
+
+== sales_raw.csv ==
+Rows read: 41
+Duplicates removed: 1
+Missing values filled: 0
+Rows dropped: 13
+Rows loaded: 27
+Notes:
+- Dropped 5 sales rows due to missing customer_id/product_id.
+
+== Additional Notes ==
+- Dropped 8 sales rows during load because customer/product could not be mapped (e.g., customers dropped due to missing email).
+- Orders inserted: 27
+- Order items inserted: 27
