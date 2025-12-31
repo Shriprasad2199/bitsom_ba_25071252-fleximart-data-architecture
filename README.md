@@ -66,9 +66,11 @@ mongosh < part2-nosql/mongodb_operations.js
 
 ## Key Learnings
 
-[3-4 sentences on what you learned]
+This project strengthened my understanding of end-to-end data architecture by integrating ETL pipelines, relational databases, NoSQL systems, and a dimensional data warehouse into a single analytical workflow. I gained practical experience in handling real-world data quality issues, designing normalized transactional schemas, and transforming operational data into a star schema optimized for analytical queries. The assignment also improved my ability to choose appropriate data storage technologies based on data structure and access patterns. Overall, it reinforced the importance of clean data modeling and well-designed pipelines in supporting reliable business intelligence.
 
 ## Challenges Faced
 
-1. [Challenge and solution]
-2. [Challenge and solution]
+1. Handling data quality issues across multiple sources:
+The raw CSV files contained missing values, inconsistent formats, and duplicate records. This was addressed by implementing robust transformation logic in the ETL pipeline, including standardization rules, validation checks, and detailed data quality reporting.
+2. Configuring and integrating multiple database systems:
+Setting up MySQL and MongoDB in a local development environment and ensuring scripts executed correctly across tools required careful configuration. This challenge was resolved by using explicit connection handling, repeatable scripts, and clear execution instructions documented in the repository.
