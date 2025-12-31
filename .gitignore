@@ -13,9 +13,9 @@ venv/
 .DS_Store
 Thumbs.db
 
+# Large files
+*.zip
+
 # Database / logs
 *.db
 *.log
-
-# Large files
-*.zip
